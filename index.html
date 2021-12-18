@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="application-name" content="Buscador de Letras de Canciones">
+    <link rel="icon" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <meta name="keywords" content="html, css, javascript, fetch api, letras, canciones, buscador">
+    <meta name="description" content="App que busca letras de canciones mediante Fetch API, construida con HTML, CSS y Vanilla JS.">
+    <link rel="canonical" href="">
+    <title>Buscador de Letras de Canciones</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Scope+One&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main id="contenido" class="contenido borde">
+        <h1 class="main__h1">Letras de Canciones</h1>
+        <div class="main__container">
+            <div id="search" class="search">
+                <h2 class="search__h2">Búsqueda</h2>
+                <form action="#" id="formulario" class="formulario">
+                    <div class="input">
+                        <label class="input__label" for="artista">Artista:</label>
+                        <input
+                            class="input__field" 
+                            type="text" 
+                            id="artista" 
+                            placeholder="Artista"
+                        >
+                    </div>
+                    <div class="input">
+                        <label class="input__label" for="cancion">Canción:</label>
+                        <input
+                            class="input__field" 
+                            type="text" 
+                            id="cancion" 
+                            placeholder="Nombre Canción"
+                        >
+                    </div>
+                    <div class="input enviar flex">
+                        <input class="boton" type="submit" value="Buscar">
+                    </div>
+                </form>
+            </div>
+
+            <div id="alertas"></div>
+
+            <div class="letras">
+                <h2 class="letras__h2"></h2>
+                <div id="resultado" class="resultado"></div>
+            </div>
+
+        </div>
+    </main>
+    <script src="js/app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* CUSTOM PROPERTIES */
+:root {
+  --fuentePrincipal: "Scope One", serif;
+  --colorBorderInput: #e1e1e1;
+  --colorFondoBoton: #0097a7;
+  --blanco: #fff;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--fuentePrincipal);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* SPINNER */
+.spinner {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
+  background-color: var(--colorFondoBoton);
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+/* GLOBALES */
+.contenido {
+  max-width: 120rem;
+  width: 95%;
+  min-height: 50vh;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 2rem;
+}
+
+.borde {
+  border-radius: 1rem;
+}
+
+@media (min-width:768px) {
+  .main__container {
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+/* MAIN */
+.main__h1 {
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.search {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+
+.search__h2 {
+  margin-bottom: 1rem;
+}
+
+/* FORMULARIO */
+.formulario {
+  width: 95%;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-bottom: .8rem; 
+}
+
+.input__label {
+  flex: 0 0 9rem;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 1rem; 
+}
+
+
+.input__field {
+  flex: 1;
+  overflow: auto;
+  border: solid 1px var(--colorBorderInput);
+}
+
+input {
+  height: 4rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.enviar {
+  justify-content: flex-end;
+}
+
+.boton {
+  display: block;
+  background-color: var(--colorFondoBoton);
+  color: var(--blanco);
+  letter-spacing: 1px;
+  border: none;
+  border-radius: .5rem;
+  text-align: center;
+  width: 95%;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: .5rem;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    width: auto;
+    padding: 1rem 3rem;
+  }
+}
+
+.boton:hover {
+  cursor: pointer;
+}
+
+/* Alerta */
+.error {
+  margin: 0 auto;
+  background-color: crimson;
+  width: 90%;
+  text-align: center;
+  color: var(--blanco);
+}
+
+/* Heading canción */
+.letras__h2 {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* Letras de la canción */
+.resultado {
+  white-space: pre-wrap;
+  padding: 2rem;
+  text-align: left;
+  font-weight: 700;
+}
+
+@media (min-width: 480px){
+  .resultado {
+    text-align: center;
+  }
+}
+
+
+
