@@ -20,7 +20,7 @@ export class API {
         fetch(url)
             .then(response => response.json())
             .then( data => {
-
+                console.log(data.lyrics)
                 cleanHTML();
 
                 if(data.lyrics){

@@ -186,6 +186,7 @@ input {
 .letras__h2 {
   text-align: center;
   text-transform: capitalize;
+  margin-top: 1.5rem;
 }
 
 /* Letras de la canción */
